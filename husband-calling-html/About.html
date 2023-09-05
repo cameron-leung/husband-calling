@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husband Calling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        /*navigation bar*/
+        @font-face { font-family: "Inter-SemiBold"; src: url("./Inter/static/Inter-SemiBold.ttf");} 
+        @font-face { font-family: "Inter-Regular"; src: url("./Inter/static/Inter-Medium.ttf");}
+        #navbar {
+            background-color: rgba(136, 97, 97, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+
+            text-decoration: none;
+            font-family: "Inter-Regular";
+            color: white;
+            font-size: 20px;
+        }
+        #navbar-right {
+            list-style: none;
+            display: flex;
+        }
+        #navbar-right li {
+            padding: 10px;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*general About page split layout*/
+        .vertical {
+            display: block;
+        }
+        .horizontal {
+            display: flex;
+            width: 100%;
+        }
+        .page {
+            height: 90vh;
+        }
+        .divider {
+            width: 50%;
+        }
+        /*color styling adjacent containers*/
+        #left-page-divider {
+            background-color: rgba(40, 44, 71, 1);
+        }
+        #right-page-divider {
+            background-color: #ffffff; 
+            margin: auto;
+        }
+
+        /*font imports for all page*/
+        @font-face { font-family: "Poppins-Bold"; src: url("./Montserrat,Poppins/Poppins/Poppins-ExtraBold.ttf");} 
+        @font-face { font-family: "Poppins"; src: url("./Montserrat,Poppins/Poppins/Poppins-SemiBold.ttf");}
+        @font-face { font-family: "Poppins-Medium"; src: url("./Montserrat,Poppins/Poppins/Poppins-Medium.ttf");}
+        @font-face { font-family: "Poppins-Light"; src: url("./Montserrat,Poppins/Poppins/Poppins-Light.ttf");}
+        /*left side About page text*/
+        #left-page-divider h1 {
+            text-align: center;
+            font-family: Poppins;
+            font-size: 50px; 
+            color: white;
+            padding: 25px;
+        }
+        #left-page-divider p {
+            text-align: center;
+            font-family: "Poppins-Light";
+            font-size: 30px;
+            color: white;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        
+        /*right Side Schedule header*/
+        .header-container {
+            width: 100%;
+        }
+        #right-header {
+            float: left;
+        }
+        /*right side Schedule list layout*/
+        .inner-container {
+            width:80%;
+            margin: auto;
+        }
+        .inner-container h1 {
+            font-family: "Poppins";
+            font-size: 50px; 
+            color: rgba(0, 0, 0, 1);
+   
+            text-align: left;
+            margin-top: 20px;
+        }
+        .add-list {
+            margin-left: 1em;
+            width: 90%;
+        }
+        /*Schedule list text*/
+        .list-text {
+            width: 100%;
+            color: rgba(0, 0, 0, 1);
+        }
+        .list-header {
+            font-family: "Poppins";
+            font-size: 25px; 
+        }
+        .list-time {
+            font-family: "Poppins-Light";
+            font-size: 20px;
+        }
+        /*Schedule list add buttons*/
+        .button {
+            border: none; 
+            cursor: pointer;
+        }
+        #conversion-button {
+            background-color: rgba(174, 34, 34, 1); 
+            color: white; 
+            border-radius: 40px; 
+            font-family: "Poppins";
+            font-size: 20px;
+            padding: 5px 40px; 
+            position: relative;
+            float: right;
+            top: 25%;
+            width: 200px;
+            word-wrap: break-word;
+        }
+        .add-button {
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- top navigation menu -->
+    <nav id="navbar">
+        <div id="navbar-left">
+            <a href="Home.html"><img width="20px" src="./megaphoneLogo.png" alt="megaphone logo" ></a>
+            <a href="Home.html"><span class="bold">Husband Calling </span> Contest</a>
+        </div>
+        <ul id="navbar-right">
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contestants.html">Contestants</a></li>
+        </ul>
+    </nav>
+
+    <!-- About page content -->
+    <div class = "horizontal">
+        <!-- left page About Us text -->
+        <div class="page divider" id = "left-page-divider">
+            <h1>About Us</h1>
+            <p>The annual Husband Calling contest at the Iowa State Fair is an entertaining event that has seen more than 500 contestants and over 2,000 spectators from around the country gather to share little moments of affection. Contestants take turns on stage in speaking to their partner, competing to be the dearest and most loving of all. It is a great way of strengthening relationships and fostering a community of love.</p>
+        </div>
+
+        <!-- right page Schedule content -->
+        <div class="page divider" id = "right-page-divider">
+            <div class = "inner-container">
+                <!--right page Schedule header-->
+                <div class = "horizontal">
+                        <!--right page Schedule header text-->
+                        <div class="divider">
+                            <h1 id="right-header">Schedule</h1>
+                        </div>
+                        <!--right page Schedule EST conversion button-->
+                        <div class="divider">
+                            <button class="button" id="conversion-button">Convert to EST </button>
+                        </div>
+                </div>
+            <div style="margin:30px"></div>
+            <div>
+                <!--schedule action 1 with +-->
+                <div class = "horizontal">
+                    <div class="add-list">
+                        <h2 class="list-text list-header">Event Kickoff & Introduction</h2>
+                        <p class="list-text list-time" id="event-time-1">10:00 AM PST</p>
+                    </div>
+                    <div>
+                        <img width="50px" height="50px" class="add-button" src="./add-button.png" alt="add">
+                    </div>  
+                </div>
+                <!--schedule action 2-->
+                <div style="margin:20px"></div>
+                <div class="add-list">
+                    <h2 class="list-text list-header">Welcome Speech From Host</h2>
+                    <p class="list-text list-time" id="event-time-2">11:00 AM PST</p>
+                </div>
+                <!--schedule action 3 with +-->
+                <div style="margin:20px"></div>
+                <div class = "horizontal">
+                    <div class="add-list">
+                        <h2 class="list-text list-header">Competition | First Round</h2>
+                        <p class="list-text list-time"id="event-time-3">11:30 AM PST</p>
+                    </div>
+                    <div>
+                        <img width="50px" height="50px" class="add-button" src="./add-button.png" alt="add">
+                    </div>  
+                </div>
+                <!--schedule action 4-->
+                <div style="margin:20px"></div>
+                <div class="add-list">
+                    <h2 class="list-text list-header">Intermission</h2>
+                    <p class="list-text list-time"id="event-time-4">2:00 PM PST</p>
+                </div>
+                <!--schedule action 5 with +-->
+                <div style="margin:20px"></div>
+                <div class = "horizontal">
+                    <div class="add-list">
+                        <h2 class="list-text list-header">Competition | Second Round</h2>
+                        <p class="list-text list-time"id="event-time-5">3:00 PM PST</p>
+                    </div>
+                    <div>
+                        <img width="50px" height="50px" class="add-button" src="./add-button.png" alt="add">
+                    </div>  
+                </div>
+                <!--schedule action 6-->
+                <div style="margin:20px"></div>
+                <div class="add-list">
+                    <h2 class="list-text list-header">Briefing and Results</h2>
+                    <p class="list-text list-time"id="event-time-6">6:00 PM PST</p>
+                </div>
+            </div>  
+        </div>
+        </div>
+    </div>
+    <!--JavaScript EST button-->
+    <script>
+        function changeTime() {
+            const textElement = document.getElementById('conversion-button');
+            if (textElement.textContent === 'Convert to EST') {
+                textElement.textContent = 'Convert to PST';
+                document.getElementById('event-time-1').textContent = '1:00 PM EST';
+                document.getElementById('event-time-2').textContent = '2:00 PM EST';
+                document.getElementById('event-time-3').textContent = '2:30 PM EST';
+                document.getElementById('event-time-4').textContent = '5:00 PM EST';
+                document.getElementById('event-time-5').textContent = '6:00 PM EST';
+                document.getElementById('event-time-6').textContent = '9:00 PM EST';
+            } else {
+                textElement.textContent = 'Convert to EST';
+                document.getElementById('event-time-1').textContent = '10:00 AM PST';
+                document.getElementById('event-time-2').textContent = '11:00 AM PST';
+                document.getElementById('event-time-3').textContent = '11:30 AM PST';
+                document.getElementById('event-time-4').textContent = '2:00 PM PST';
+                document.getElementById('event-time-5').textContent = '3:00 PM PST';
+                document.getElementById('event-time-6').textContent = '6:00 PM PST';
+            }
+        }
+            document.getElementById('conversion-button').addEventListener('click', changeTime);
+    </script>
+</body>
+</html>

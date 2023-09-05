@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husband Calling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        /*navigation bar*/
+        @font-face { font-family: "Inter-SemiBold"; src: url("./Inter/static/Inter-SemiBold.ttf");} 
+        @font-face { font-family: "Inter-Regular"; src: url("./Inter/static/Inter-Medium.ttf");}
+        #navbar {
+            background-color: rgba(136, 97, 97, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+
+            text-decoration: none;
+            font-family: "Inter-Regular";
+            color: white;
+            font-size: 20px;
+        }
+        #navbar-right {
+            list-style: none;
+            display: flex;
+        }
+        #navbar-right li {
+            padding: 10px;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*general home page layout*/
+        body {
+            background-image: url('./homeImage.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position-y: 35px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; 
+            height: 100%; 
+            padding: 70px; 
+        }
+
+        /*general home page content*/
+        @font-face { font-family: "Poppins-Bold"; src: url("./Montserrat,Poppins/Poppins/Poppins-ExtraBold.ttf");} 
+        @font-face { font-family: "Poppins"; src: url("./Montserrat,Poppins/Poppins/Poppins-SemiBold.ttf");}
+        @font-face { font-family: "Poppins-Medium"; src: url("./Montserrat,Poppins/Poppins/Poppins-Medium.ttf");}
+        .text {
+            color: white; 
+            font-family: "Poppins";
+            text-align: right;
+            position: absolute;
+        }
+        /*Large slogan*/
+        #one-call-text {
+            font-family: "Poppins-Bold";
+            font-size: 120px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            top: 28%;
+        }
+        #away-text {
+            font-family: "Poppins-Bold";
+            font-size: 120px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            top: 44%;
+        }
+        /*lower description & button*/
+        .bottom-container {
+            display: flex; 
+            align-items: center;
+        }
+        .button {
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+        }
+        #learn-more-button {
+            background-color: rgba(174, 34, 34, 1); 
+            color: white; 
+            border-radius: 23px; 
+            font-family: "Poppins";
+            font-size: 20px;
+            margin: 20px;
+
+            position:absolute;
+            top: 72%;
+            right: 70px;
+        }
+        #description {
+            font-family: "Poppins-Medium";
+            font-size: 15px;
+            top: 75%;
+            right: 280px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- top navigation menu -->
+    <nav id="navbar">
+        <div id="navbar-left">
+            <a href="Home.html"><img width="20px" src="./megaphoneLogo.png" alt="megaphone logo" ></a>
+            <a href="Home.html"><span class="bold">Husband Calling </span> Contest</a>
+        </div>
+        <ul id="navbar-right">
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contestants.html">Contestants</a></li>
+        </ul>
+    </nav>
+    <!-- large slogan -->
+    <div class="container">
+        <p class="text" id="one-call-text">One Call</p>
+        <p class = "text" id="away-text">Away.</p>
+        
+    </div>
+    <!-- bottom description & button -->
+    <div class="bottom-container">
+        <p class = "text" id="description">Sending words of warmth, care,<br> and love to your partner</p>
+        <a href="About.html"><button class="button" id="learn-more-button">Learn More</button></a>
+    </div>
+</body>
+</html>
