@@ -1,0 +1,18 @@
+# Explanation/Project Spec
+Fall semester 2023 Frontend WDB app demo. Topic: husband calling contest client. 
+
+"Our client is the annual Husband Calling Contest, and we will be building their website. Their description is as follows: With over 40 years of illustrious history, the annual Husband Calling contest at the Iowa State Fair has always been an entertaining feat. Its popularity, though, is unfortunately on decline. We’d like to change that. We want to make our event feel younger and more vibrant than ever. And the process starts by launching a new central hub for all event related information."
+# Folders
+I made a first full attempt on html, css, and javascript where every menu item and button worked with Figma-compliant design! Super proud of my work since I have never programmed a site alone before. I included my app folder from nextjs overall folder which I kept attempting but didn't get as far on because I don't really know JavaScript and didn't have much time left. I thought the conversion would be easier but it was pretty challenging, which I would research and learn more if I had more time. 
+## HTML
+first attempt at entire site (6 hrs). utilized html to easily open in browser, css for styling per page, and javascript to handle button click responses. From Figma, copied layout, exact colors, images, fonts, and logos by downloading, employing Pixlr, and Google Fonts.
+
+if I had more time & foresight, I would make a navbar and general font default css file so I don't have to copy it into each page and also separate css files for every page. For the Home page text containers, I hard-coded positions and breaks because the text padding overlapped and would create too much spacing between lines. With more time, I would find how to make this more concise and make a div for the bottom descriptive text. With more time, research, independent study, and expertise, I would modify the About page button to use a for loop, variables, and time objects in JavaScript, but I'm not well-versed in that language.
+I have never coded a site from scratch, so had a lot of trouble with divs and spacing, switching from horizontal to vertical then aligning objects to the center, left, or right within the divided divs. I'm really proud of how I used aligns, margins, and paddings instead of hard-coding and testing out x or y positions to match the Figma. With the button, I'm happy with my use of JavaScript functions, debugging with alerts, and the Inspection tool. I was sufficiently able to change the button and the time text.
+## nextjs app
+I couldn't download all the dependencies from nextjs, so I only imported the app folder with my modifications. Within react, the home page opens the same as if opened with HTML.
+
+(3 hrs) I thought it would be easier to convert an html site to react, but I found a lot of differences, so after studying wdb's DeCal lessons and the nextjs website tutorial, I was able to connect to localhost. I recoded my HTML into js
+and was super proud to recreate the homepage! I got stuck on the logo image showing up although I tested different src inputs. I also couldn't link to other pages that I tried to copy from html to js in other files. After spending a lot of time researching and hard-coding the about page's time conversion js, I reached a final challenge where I didn't know how to access the About page and test out my code. I tried to direct the browser directly to the "home" and "about" page but the jsconfig.json gave me errors for changing paths/names  and I couldn't figure out how to fix the config.
+## what i can improve
+less repetition & more concise, applicable files/coding structure. learn js and react. start on react since the beginning. utilize git better.
